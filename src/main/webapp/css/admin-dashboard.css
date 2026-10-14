@@ -1,0 +1,156 @@
+:root {
+    /* Dark theme color palette - no blue */
+    --primary-color: #8e44ad;       /* Rich purple */
+    --secondary-color: #e67e22;     /* Warm orange */
+    --background-color: #1a1a1a;    /* Dark charcoal */
+    --hover-color: #2d2d2d;         /* Dark gray for hover */
+    --border-color: #444;           /* Medium gray */
+    --card-bg: #2a2a2a;            /* Card background */
+    --text-color: #f0f0f0;         /* Light text */
+    --button-edit: #f39c12;        /* Gold yellow */
+    --button-remove: #e74c3c;      /* Red */
+    --button-disabled: #7f8c8d;    /* Gray for disabled */
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --even-row: #242424;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+table {
+    width: 96%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--even-row);
+}
+
+tr:hover {
+    background-color: var(--hover-color);
+}
+
+td {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+/* Button Styling */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 80px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-edit {
+    background-color: var(--button-edit);
+    color: #fff;
+    width: 100px;
+    height: 40px;
+}
+
+.btn-edit:hover {
+    background-color: #e67e22;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-remove {
+    background-color: var(--button-remove);
+    color: #fff;
+    width: 100px;
+    height: 40px;
+}
+
+.btn-remove-disabled {
+    background-color: var(--button-disabled);
+    color: white;
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn-remove:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.add-button {
+    margin-top: 20px;
+    margin-left: 2%;
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 200px;
+    background-color: var(--button-edit);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.add-button:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.action-button-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+* {
+    transition: background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+button:focus, input:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}

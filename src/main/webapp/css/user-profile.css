@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+nav a {
+    color: #bbbbbb;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn-clicked {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-btn-clicked {
+    background-color: #4caf50;
+    color: white;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 0 auto 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px 0;
+    text-align: left;
+    color: #dddddd;
+}
+
+table td:first-child {
+    font-weight: bold;
+    width: 35%;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-edit, .btn-remove {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-edit {
+    background-color: #2196f3;
+    color: white;
+}
+
+.btn-remove {
+    background-color: #e53935;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #0b7dda;
+}
+
+.btn-remove:hover {
+    background-color: #d32f2f;
+}

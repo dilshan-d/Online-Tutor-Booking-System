@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #8e44ad;       /* Rich purple */
+    --secondary-color: #e67e22;     /* Warm orange */
+    --background-color: #1a1a1a;    /* Dark charcoal */
+    --hover-color: #732d91;         /* Darker purple */
+    --border-color: #444;           /* Medium gray */
+    --card-bg: #2a2a2a;            /* Slightly lighter card background */
+    --text-color: #f0f0f0;         /* Light text */
+    --error-color: #e74c3c;        /* Red for errors */
+    --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+form {
+    text-align: center;
+    background-color: var(--card-bg);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 12px 10px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--primary-color);
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-1px);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+    font-size: 0.9rem;
+}
+* {
+    transition: background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}

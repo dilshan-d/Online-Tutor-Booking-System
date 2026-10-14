@@ -1,0 +1,97 @@
+/* admin-logic.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for both sides */
+.main-container {
+    display: flex;
+    height: calc(100vh - 80px); /* subtract header height if needed */
+}
+
+/* Left image section */
+.left-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.left-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Right login section */
+.login-section {
+    flex: 1;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Login form container */
+.login-box-right {
+    background-color: #2c2c2c;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.login-box-right h2 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 30px;
+}
+
+/* Form field styles */
+.login-box-right label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.login-box-right input[type="email"],
+.login-box-right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: #f3f3f3;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #800080;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #a020f0;
+}

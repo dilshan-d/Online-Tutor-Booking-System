@@ -1,0 +1,152 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    color: #ffffff;
+}
+
+nav a {
+    color: #bbbbbb;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover, .nav-btn-clicked {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-btn-clicked {
+    background-color: #4caf50;
+}
+
+.title-center {
+    text-align: center;
+    margin: 30px 0;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.controls form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.btn-search, .btn-sort, .btn-reset {
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-search:hover, .btn-sort:hover, .btn-reset:hover {
+    background-color: #666;
+}
+
+.tutors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 40px 40px;
+}
+
+.profile-card {
+    width: 260px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-card h3, h4, p {
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.button-group {
+    margin-top: 15px;
+}
+
+.btn-view-profile, .btn-book {
+    padding: 10px 14px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-view-profile {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-book {
+    background-color: #2196f3;
+    color: white;
+}
+
+.btn-view-profile:hover {
+    background-color: #45a049;
+}
+
+.btn-book:hover {
+    background-color: #0b7dda;
+}
+
+.error-text {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-text {
+    text-align: center;
+    color: #ccc;
+    margin-top: 30px;
+}

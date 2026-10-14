@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #7b1fa2;
+    --secondary-color: #ffa000;
+    --background-color: #121212;
+    --hover-color: #6a1b9a;
+    --border-color: #424242;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --highlight-color: #ffc107;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.tutor-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-bottom: 25px;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+}
+
+form {
+    text-align: center;
+    background-color: var(--card-bg);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 12px 10px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+input[type="time"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+input[type="time"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(255, 160, 0, 0.2);
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculated-cost {
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--highlight-color);
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+* {
+    transition: background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+@media (max-width: 650px) {
+    .tutor-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
